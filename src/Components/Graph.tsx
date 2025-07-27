@@ -54,6 +54,10 @@ export default function Graph({So,v,t,max,y,sety}: Props){
         <div className="graph flex items-end bg-amber-200 rounded-lg">
             
             <div className="y w-3 h-3 rounded-full bg-amber-700 relative" style={{bottom: ypos + "%", left: t + "px"}}></div>
+            <div className="lineArea relative flex h-full" style={{left: -100+ "px"}}>
+                <h1 className="pr-2 Poppins">{divisor*1000}</h1>
+                <div className="line bg-white w-3 rounded-full h-full"></div>
+            </div>
             
         </div>
         
