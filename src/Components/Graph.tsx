@@ -5,13 +5,15 @@ type Props = {
     So : number,
     v: number,
     t: number,
-    max: number 
+    max: number, 
+    y: number,
+    sety: (y:number) => void
 }
 
 
-export default function Graph({So,v,t,max}: Props){
+export default function Graph({So,v,t,max,y,sety}: Props){
 
-    const [y, sety] = useState(0)
+    
     const [ypos, setypos] = useState(y)
     const [xpos, setxpos] = useState(y)
     const [divisor,setDivisor] = useState(2)

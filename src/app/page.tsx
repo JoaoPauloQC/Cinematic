@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="Home">
-      <div className="wrapper">
+      <div className="wrapper pb-20">
 
       
       <MRU/>

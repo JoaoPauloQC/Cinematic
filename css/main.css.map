@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/generics/generics.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;AAEJ;EACI;EACA","file":"main.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/generics/generics.scss","../sass/generics/fonts.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;AAEJ;EACI;EACA;;;ACPJ;EACI;;;AAEJ;EACI","file":"main.css"}
