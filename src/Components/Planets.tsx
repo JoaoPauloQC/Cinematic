@@ -1,15 +1,15 @@
 import { Canvas, useLoader } from "@react-three/fiber"
 import { Sphere } from '@react-three/drei'
-import earthTextureImg from '../../public/assets/mundos/mapamundi.png'
+import earthTextureImg from '../assets/mundos/mapamundi.png'
 import { TextureLoader } from "three"
 import { StaticImageData } from "next/image"
-import jupiterTextureImg from '../../public/assets/mundos/jupiterTextureImg.png'
-import moonTextureImg from '../../public/assets/mundos/moonTextureImg.png'
-import mercuryTextureImg from '../../public/assets/mundos/mercuryTextureImg.png'
-import venusTextureImg from '../../public/assets/mundos/venusTextureImg.png'
-import sunTextureImg from '../../public/assets/mundos/sunTextureImg.png'
-import marsTextureImg from '../../public/assets/mundos/marsTextureImg.png'
-import saturnTextureImg from '../../public/assets/mundos/saturnTextureImg.png'
+import jupiterTextureImg from '../assets/mundos/jupiterTextureImg.png'
+import moonTextureImg from '../assets/mundos/moonTextureImg.png'
+import mercuryTextureImg from '../assets/mundos/mercuryTextureImg.png'
+import venusTextureImg from '../assets/mundos/venusTextureImg.png'
+import sunTextureImg from '../assets/mundos/sunTextureImg.png'
+import marsTextureImg from '../assets/mundos/marsTextureImg.png'
+import saturnTextureImg from '../assets/mundos/saturnTextureImg.png'
 
 import * as THREE from 'three';
 import { Line } from '@react-three/drei';
