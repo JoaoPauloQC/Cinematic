@@ -13,3 +13,10 @@
     
 }
 
+.ProjectBox{
+    transition: transform 300ms ease-out,background-color 200ms ease-in;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+

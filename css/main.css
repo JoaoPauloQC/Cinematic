@@ -209,6 +209,13 @@
   }
 }
 
+.ProjectBox {
+  transition: transform 300ms ease-out, background-color 200ms ease-in;
+}
+.ProjectBox:hover {
+  transform: scale(1.03);
+}
+
 .movements__card__area {
   width: max-content;
   overflow-y: hidden;

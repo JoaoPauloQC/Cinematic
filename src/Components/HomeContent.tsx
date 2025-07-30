@@ -1,13 +1,17 @@
 import { allsections } from "@/data";
 import Link from "next/link";
+import Physics from "./Physics";
+import ProjectContent from "./ProjectContent";
 
 export default function HomeContent (){
     return (
-        <div className="Home__Content pt-20 fade-in-2s opacity-0">
-            <div className="Poppins max-md:text-center ">
+        <div className="Home__Content pt-10 pb-50 fade-in-2s opacity-0">
+            <div className="Poppins max-md:text-center pb-20 ">
                 <h1 className="text-4xl">Olá!</h1>
                 <h2 className="text-lg pt-3">Seja bem vindo ao Central Física</h2>
             </div>
+            <ProjectContent></ProjectContent>
+            <Physics/>
 
 
             <div className="w-full overflow-y-hidden overflow-x-scroll scroll-smooth movements__card__container">
