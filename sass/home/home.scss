@@ -1,7 +1,15 @@
+@use '../generics/generics.scss' as gen;
+
 .movements{
     &__card{
         transition: 0.5s ease-out;
-        
+        &__container{
+        @include gen.responsive(gen.$mobile){
+            display: flex;
+            justify-content: center;
+        }
+    }    
     }
+    
 }
 

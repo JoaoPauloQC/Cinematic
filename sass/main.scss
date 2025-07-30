@@ -5,6 +5,8 @@
 @use "GalileuAndAristoles/galileu.scss";
 @use "GalileuAndAristoles/aristoteles.scss";
 @use "GalileuAndAristoles/galileuandaristoteles.scss";
-@use "Geocentrism/geocentrism.scss";
+@use "Geocentrism&Heliocentrism/geocentrism.scss";
+@use "Geocentrism&Heliocentrism/heliocentrism.scss";
 @use "home/home.scss";
-@use "components/cards.scss"
+@use "components/cards.scss";
+

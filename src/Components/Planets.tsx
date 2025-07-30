@@ -52,6 +52,7 @@ export const Planet = ({args,position,texture}: Props) =>{
 }
 
 type PlanetsProps = {
+    args?: [radius: number, width: number, h: number],
     position? : [x: number, y: number, z: number],
 }
 
@@ -73,10 +74,10 @@ export const Jupiter = ({position}: PlanetsProps) =>{
 
 }
 
-export const Moon = ({position}: PlanetsProps) =>{
+export const Moon = ({args,position}: PlanetsProps) =>{
 
     return (
-        <Planet args={[0.75,64,32]} position={position} texture={moonTextureImg}>
+        <Planet args={args? args : [0.75,64,32]} position={position} texture={moonTextureImg}>
         </Planet>
     )
 

@@ -28,8 +28,15 @@ const Geocentrism : Sections = {
     description: "O que foi o geocentrismo?",
 }
 
+const Heliocentrism : Sections = {
+    name: "Heliocentrismo",
+    path: "/Heliocentrism",
+    description: "O que foi o Heliocentrismo?",
+}
+
 export const allsections: Sections[] = []
 allsections.push(MRU)
 allsections.push(MUV)
 allsections.push(GalileuVSAristoteles)
 allsections.push(Geocentrism)
+allsections.push(Heliocentrism)

@@ -163,9 +163,50 @@
   width: 1200px;
   height: 1200px;
 }
+@media screen and (max-width: 400px) {
+  .geocentrism__Canva {
+    width: 350px;
+    height: 700px;
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .geocentrism__Canva {
+    width: 100%;
+    padding: 10px;
+    height: 700px;
+    justify-self: center;
+  }
+}
+
+.heliocentrism__Canva {
+  width: 1200px;
+  height: 1200px;
+}
+@media screen and (max-width: 400px) {
+  .heliocentrism__Canva {
+    width: 350px;
+    height: 700px;
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .heliocentrism__Canva {
+    width: 100%;
+    padding: 10px;
+    height: 700px;
+    justify-self: center;
+  }
+}
 
 .movements__card {
   transition: 0.5s ease-out;
+}
+@media screen and (max-width: 767px) {
+  .movements__card__container {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .movements__card__area {
