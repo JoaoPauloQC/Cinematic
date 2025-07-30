@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="Home">
-      <div className="wrapper pb-20">
+      <div className="wrapper py-20">
 
       
       <HomeContent></HomeContent>

@@ -6,7 +6,7 @@ export default function HomeContent (){
         <div className="Home__Content pt-20 fade-in-2s opacity-0">
             <div className="Poppins max-md:text-center ">
                 <h1 className="text-4xl">Olá!</h1>
-                <h2 className="text-lg">Seja bem vindo ao Central Física</h2>
+                <h2 className="text-lg pt-3">Seja bem vindo ao Central Física</h2>
             </div>
 
 
