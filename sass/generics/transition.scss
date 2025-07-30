@@ -1,0 +1,8 @@
+.transition{
+    transition: all;
+@for $i from 1 through 5 {
+    &__#{$i}s {
+        transition-duration: #{calc($i/2)}s;
+    }
+}
+}

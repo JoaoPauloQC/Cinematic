@@ -1,4 +1,5 @@
-import MRU from "@/Movements/MRU";
+import HomeContent from "@/Components/HomeContent";
+import MRU from "@/app/MRU/MRU";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
       <div className="wrapper pb-20">
 
       
-      <MRU/>
+      <HomeContent></HomeContent>
       </div>
     </div>
   );

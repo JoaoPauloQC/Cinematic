@@ -1,5 +1,5 @@
 "use client"
-import Graph from "@/Components/Graph";
+import Graph from "@/app/MRU/Graph";
 import { useEffect, useState } from "react";
 
 export default function MRU () {
@@ -28,7 +28,7 @@ export default function MRU () {
                     <label htmlFor="" className="text-center Poppins"> Distância Inicial: {So}</label>
                     <input type="range" name="" id="" min={0} max={1000} onChange={(e)=> setSo(Number(e.target.value))} className="bg-neutral-700 w-32 h-10"/>
                 </div>
-                <div className="Montserrat flex justify-center w-max  p-5 rounded-xl bg-neutral-700"><h1 className="text-4xl"> S({t}) = {y}</h1></div>
+                <div className="Montserrat flex justify-center w-max  p-5 rounded-xl bg-neutral-700 transition transition__1s border-2 border-neutral-700  hover:bg-neutral-200 hover:border-2 hover:border-neutral-700 hover:text-neutral-800"><h1 className="text-4xl"> S({t}) = {y}</h1></div>
             </div>
             
         </>
