@@ -3,7 +3,7 @@ import Galileu from "./Galileu/Galileu";
 
 export default function GalileuVSAristoteles() {
     return (
-        <div className="GalileuVSAristoles flex flex-col fade-in-4s">
+        <div className="GalileuVSAristoles flex flex-col py-20 fade-in-4s">
             <Galileu/>
             <Aristoteles/>
         </div>

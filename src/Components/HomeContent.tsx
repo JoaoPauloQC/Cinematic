@@ -11,7 +11,7 @@ export default function HomeContent (){
 
 
 
-            <div className="movements__card__area flex w-full gap-10 pt-30 p-10 overflow-y-auto justify-around">
+            <div className="movements__card__area flex w-full gap-10 pt-30 p-10 overflow-y-auto justify-around max-md:flex-col">
                 
 
                 {allsections.map(s=>(
