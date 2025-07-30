@@ -75,11 +75,11 @@ export default function AristolesGraph(){
                 <div className="Aristoteles__Graph flex justify-center items-end  rounded-lg">
                     <div className={`Aristoteles__ball  bg-red-500 relative rounded-full`} style={{bottom: ypos + "px", width: ballsize, height:ballsize}}></div>
                 </div>
-                <button onClick={displayball} className="w-50  rounded-lg p-5 bg-neutral-300 text-neutral-800 Poppins cursor-pointer"> Lançar bola </button>
-                <button onClick={()=> setballsize(prev=> prev+1)} className="w-50  rounded-lg p-5 bg-neutral-300 text-neutral-800 Poppins cursor-pointer"> Aumentar bola </button>
-                <button onClick={()=> setballsize(prev=> prev-1)} className="w-50  rounded-lg p-5 bg-neutral-300 text-neutral-800 Poppins cursor-pointer"> Diminuir bola </button>
+                <button onClick={displayball} className="w-50  rounded-lg p-5 bg-neutral-300 text-neutral-800 Poppins cursor-pointer Graph__Ball__Button"> Lançar bola </button>
+                <button onClick={()=> setballsize(prev=> prev+1)} className="w-50  rounded-lg p-5 bg-neutral-300 text-neutral-800 Poppins cursor-pointer Graph__Ball__Button"> Aumentar bola </button>
+                <button onClick={()=> setballsize(prev=> prev-1)} className="w-50  rounded-lg p-5 bg-neutral-300 text-neutral-800 Poppins cursor-pointer Graph__Ball__Button"> Diminuir bola </button>
                 <div className="time">
-                    <h1>{timer}</h1>
+                    <h1 className="text-4xl Poppins">{timer}</h1>
                 </div>
             </div>
     

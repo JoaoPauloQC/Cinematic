@@ -1,4 +1,4 @@
-import GalileuGraph from "./Galileu/GalileuGraph";
+import GalileuGraph from "./GalileuGraph";
 
 export default function Galileu () {
     return (

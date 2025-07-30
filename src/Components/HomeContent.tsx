@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HomeContent (){
     return (
-        <div className="Home__Content pt-20 fade-in-1s opacity-0">
+        <div className="Home__Content pt-20 fade-in-2s opacity-0">
             <div className="Poppins  ">
                 <h1 className="text-4xl">Olá!</h1>
                 <h2 className="text-lg">Seja bem vindo ao Central Física</h2>

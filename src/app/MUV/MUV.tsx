@@ -12,7 +12,7 @@ export default function MRU () {
     const [y, sety] = useState(0)
     
     return (
-        <>
+        <div className="left-to-normal__4s">
             <div className="graphArea flex pt-20 justify-center">
                 <Graph So={So} v={v} t={t} max={max} y={y} a={a} sety={sety}></Graph>
             </div>
@@ -33,10 +33,10 @@ export default function MRU () {
                     <label htmlFor="" className="text-center Poppins"> Aceleração: {a}</label>
                     <input type="range" name="" id="" min={0} max={100} onChange={(e)=> seta(Number(e.target.value))} className="bg-neutral-700 w-32 h-10"/>
                 </div>
-                <div className="Montserrat flex justify-center w-max  p-5 rounded-xl bg-neutral-700 transition transition__1s border-2 border-neutral-700  hover:bg-neutral-200 hover:border-2 hover:border-neutral-700 hover:text-neutral-800"><h1 className="text-4xl"> S({t}) = {y}</h1></div>
+                <div className="Montserrat flex justify-center w-max  p-5 rounded-xl bg-neutral-700 transition transition__1s border-2 border-neutral-700  hover:bg-neutral-200 hover:border-2 hover:border-neutral-700 hover:text-neutral-800"><h1 className="text-2xl"> S({t}) = {y}</h1></div>
             </div>
             
-        </>
+        </div>
     )
 
 }

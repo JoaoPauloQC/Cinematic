@@ -25,9 +25,94 @@
     opacity: 1;
   }
 }
+@keyframes left-to-normal {
+  0% {
+    position: relative;
+    left: -1800px;
+  }
+  100% {
+    position: relative;
+    left: 0;
+  }
+}
+@keyframes small-to-normal {
+  0% {
+    transform: scale(0.2);
+  }
+}
 .fade-in-1s {
-  opacity: 0;
-  animation: fade-in 1s ease-in forwards;
+  animation: fade-in forwards 0.5s ease-out;
+}
+.fade-in-2s {
+  animation: fade-in forwards 1s ease-out;
+}
+.fade-in-3s {
+  animation: fade-in forwards 1.5s ease-out;
+}
+.fade-in-4s {
+  animation: fade-in forwards 2s ease-out;
+}
+.fade-in-5s {
+  animation: fade-in forwards 2.5s ease-out;
+}
+.fade-in-6s {
+  animation: fade-in forwards 3s ease-out;
+}
+.fade-in-7s {
+  animation: fade-in forwards 3.5s ease-out;
+}
+.fade-in-8s {
+  animation: fade-in forwards 4s ease-out;
+}
+
+.left-to-normal__1s {
+  animation: left-to-normal forwards 0.5s ease-out;
+}
+.left-to-normal__2s {
+  animation: left-to-normal forwards 1s ease-out;
+}
+.left-to-normal__3s {
+  animation: left-to-normal forwards 1.5s ease-out;
+}
+.left-to-normal__4s {
+  animation: left-to-normal forwards 2s ease-out;
+}
+.left-to-normal__5s {
+  animation: left-to-normal forwards 2.5s ease-out;
+}
+.left-to-normal__6s {
+  animation: left-to-normal forwards 3s ease-out;
+}
+.left-to-normal__7s {
+  animation: left-to-normal forwards 3.5s ease-out;
+}
+.left-to-normal__8s {
+  animation: left-to-normal forwards 4s ease-out;
+}
+
+.small-to-normal__1s {
+  animation: small-to-normal forwards 0.5s ease-out;
+}
+.small-to-normal__2s {
+  animation: small-to-normal forwards 1s ease-out;
+}
+.small-to-normal__3s {
+  animation: small-to-normal forwards 1.5s ease-out;
+}
+.small-to-normal__4s {
+  animation: small-to-normal forwards 2s ease-out;
+}
+.small-to-normal__5s {
+  animation: small-to-normal forwards 2.5s ease-out;
+}
+.small-to-normal__6s {
+  animation: small-to-normal forwards 3s ease-out;
+}
+.small-to-normal__7s {
+  animation: small-to-normal forwards 3.5s ease-out;
+}
+.small-to-normal__8s {
+  animation: small-to-normal forwards 4s ease-out;
 }
 
 .transition {
@@ -59,6 +144,19 @@
   width: 500px;
   height: 500px;
   background-color: rgb(14, 14, 14);
+}
+
+.Graph__Ball__Button {
+  background-color: #d3d2d1;
+  color: #0b0b0b;
+  border: 2px solid;
+  transition: 0.25s ease-in-out;
+}
+.Graph__Ball__Button:hover {
+  background-color: #0b0b0b;
+  transform: scale(1.1);
+  color: wheat;
+  border: 2px solid wheat;
 }
 
 .movements__card {
