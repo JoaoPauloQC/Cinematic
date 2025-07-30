@@ -1,0 +1,20 @@
+.movements{
+    &__card{
+        &__area{
+            width: max-content;
+            overflow-y: hidden;
+        }
+        &__container{
+            &::-webkit-scrollbar{
+                height: 3px;
+            }
+
+            &::-webkit-scrollbar-thumb{
+                background-color: rgb(54, 54, 54);
+            }
+            &::-webkit-scrollbar-track{
+                background-color: transparent;
+            }
+        }
+    }
+}

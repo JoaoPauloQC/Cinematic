@@ -10,8 +10,8 @@ export default function HomeContent (){
             </div>
 
 
-
-            <div className="movements__card__area flex w-full gap-10 pt-30 p-10 overflow-y-auto justify-around max-md:flex-col">
+            <div className="w-full overflow-y-hidden overflow-x-scroll scroll-smooth movements__card__container">
+            <div className="movements__card__area flex  gap-30 pt-30 p-10 overflow-y-auto  max-md:flex-col max-md:items-center">
                 
 
                 {allsections.map(s=>(
@@ -21,6 +21,7 @@ export default function HomeContent (){
                 </Link>
                 ))}
             
+            </div>
             </div>
 
         </div>

@@ -22,7 +22,14 @@ const GalileuVSAristoteles : Sections = {
     description: "Saiba sobre as duas famosas teorias discutidas a respeito do movimento de queda."
 }
 
+const Geocentrism : Sections = {
+    name: "Geocentrismo",
+    path: "/Geocentrism",
+    description: "O que foi o geocentrismo?",
+}
+
 export const allsections: Sections[] = []
 allsections.push(MRU)
 allsections.push(MUV)
 allsections.push(GalileuVSAristoteles)
+allsections.push(Geocentrism)
