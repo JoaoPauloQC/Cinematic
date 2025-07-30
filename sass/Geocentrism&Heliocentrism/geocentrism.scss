@@ -1,0 +1,23 @@
+@use '../generics/generics.scss' as gen;
+
+
+.geocentrism{
+
+
+
+    &__Canva{
+        width: 1200px;
+        height: 1200px;
+        @include gen.responsive(gen.$iphone){
+            width: 350px;
+            height: 700px;
+            justify-self: center;
+        }
+         @include gen.responsive(gen.$mobile){
+            width: 100%;
+            padding: 10px;
+            height: 700px;
+            justify-self: center;
+        }
+    }
+}
