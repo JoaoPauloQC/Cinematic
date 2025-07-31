@@ -9,7 +9,14 @@ export default function MRU () {
     const [So,setSo] = useState(0)
     const [v,setV] = useState(11)
     const [y, sety] = useState(0)
-    
+    useEffect(()=>{
+        const width = window.innerWidth
+        console.log("Width: ",width)
+        if (window.innerWidth < 500){
+            setMax(250)
+        }
+            
+    },[])
     return (
         <div className="left-to-normal__4s">
             <div className="graphArea flex pt-20 justify-center">

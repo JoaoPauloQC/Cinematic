@@ -1,5 +1,10 @@
 .movements{
     &__card{
+
+        &:hover{
+            transform: scale(1.03);
+        }
+
         &__area{
             width: max-content;
             overflow-y: hidden;
@@ -9,6 +14,8 @@
                 height: 5px;
                 
             }
+
+
 
             &::-webkit-scrollbar-thumb{
                 background-color: rgb(54, 54, 54);

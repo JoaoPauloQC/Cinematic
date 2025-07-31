@@ -10,6 +10,14 @@ export default function MRU () {
     const [So,setSo] = useState(0)
     const [v,setV] = useState(5)
     const [y, sety] = useState(0)
+    useEffect(()=>{
+        const width = window.innerWidth
+        console.log("Width: ",width)
+        if (window.innerWidth < 500){
+            setMax(250)
+        }
+            
+    },[])
     
     return (
         <div className="left-to-normal__4s">

@@ -8,6 +8,12 @@
   width: 500px;
   height: 500px;
 }
+@media screen and (max-width: 767px) {
+  .graph {
+    width: 250px;
+    height: 250px;
+  }
+}
 
 .Poppins {
   font-family: Poppins;
@@ -139,11 +145,21 @@
   height: 500px;
   background-color: rgb(14, 14, 14);
 }
+@media screen and (max-width: 767px) {
+  .Galileu__Graph {
+    width: 300px;
+  }
+}
 
 .Aristoteles__Graph {
   width: 500px;
   height: 500px;
   background-color: rgb(14, 14, 14);
+}
+@media screen and (max-width: 767px) {
+  .Aristoteles__Graph {
+    width: 300px;
+  }
 }
 
 .Graph__Ball__Button {
@@ -216,6 +232,9 @@
   transform: scale(1.03);
 }
 
+.movements__card:hover {
+  transform: scale(1.03);
+}
 .movements__card__area {
   width: max-content;
   overflow-y: hidden;

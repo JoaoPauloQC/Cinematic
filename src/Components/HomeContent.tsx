@@ -8,9 +8,9 @@ import LeftScroll from "@/app/ScrollAnimations/LeftScroll";
 export default function HomeContent (){
     return (
         <div className="Home__Content pt-10 pb-50 fade-in-4s opacity-0">
-            <div className="Poppins max-md:text-center pb-20 ">
+            <div className="Poppins max-md:text-center pb-30 ">
                 <h1 className="text-6xl">Olá!</h1>
-                <div className="flex text-5xl  pt-7">
+                <div className="flex text-5xl  pt-7 max-md:flex-col">
                 <h2 className="">Seja bem vindo ao </h2>
                 <p className="font-bold pl-3"> Central Física</p>
                 </div>
@@ -27,7 +27,7 @@ export default function HomeContent (){
                 
 
                 {allsections.map(s=>(
-                    <LeftScroll threshold={0.75} responsive="md:">
+                    <LeftScroll threshold={0.75} responsive={"max-md:"}>
                         <Link href={s.path} className="movements__card w-64 h-64 p-2 flex flex-col  gap-2 bg-neutral-800 rounded-lg border-2 border-neutral-200 cursor-pointer hover:bg-neutral-200 hover:border-2 hover:border-neutral-700 hover:text-neutral-800">
                         <h1 className="Montserrat flex pt-3  pl-3 text-xl  ">{s.name}</h1>
                         <p className="text-base Poppins  flex pt-10 pl-3 self-center">{s.description}</p>

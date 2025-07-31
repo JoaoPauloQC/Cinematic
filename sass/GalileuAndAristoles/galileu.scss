@@ -1,7 +1,14 @@
+@use '../generics/generics.scss' as gen;
+
+
 .Galileu{
     &__Graph{
         width: 500px;
         height: 500px;
         background-color: rgb(14, 14, 14);
+        @include gen.responsive(gen.$mobile) {
+        width: 300px;
     }
 }
+    }
+    

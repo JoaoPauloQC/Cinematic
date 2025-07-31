@@ -1,6 +1,13 @@
 $mobile: 767px;
 $iphone : 400px;
 
+@mixin responsive ($width) {
+
+    @media screen and (max-width: $width) {
+        @content
+    }
+
+}
 
 .wrapper{
     max-width: 1200px;
@@ -10,12 +17,8 @@ $iphone : 400px;
 .graph {
     width: 500px;
     height: 500px;
-}
-
-@mixin responsive ($width) {
-
-    @media screen and (max-width: $width) {
-        @content
+    @include responsive($mobile){
+        width: 250px;
+        height: 250px;
     }
-
 }
