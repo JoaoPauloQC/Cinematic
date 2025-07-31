@@ -34,7 +34,7 @@ export default function RevealScroll ({children,classname,threshold,responsive}:
 
     return(
         <div ref={LeftRef}>
-        <div className={(responsive + (isVisible? ("-translate-x-0 ") : "-translate-x-full ")) + "transition-transform duration-300"}>
+        <div className={(responsive + (isVisible? ("translate-x-0 ") : "-translate-x-full ")) + "transition-transform duration-300"}>
             {children}
         </div>
         </div>
