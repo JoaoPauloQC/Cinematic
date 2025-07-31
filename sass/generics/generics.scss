@@ -22,3 +22,7 @@ $iphone : 400px;
         height: 250px;
     }
 }
+
+.leftscroll{
+    @include responsive($mobile)
+}

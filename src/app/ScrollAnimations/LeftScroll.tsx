@@ -6,19 +6,26 @@ type Props = {
     children: React.ReactNode,
     classname?: string,
     threshold: number,
-    responsive?: string
+    responsive?: number
 }
 
-export default function RevealScroll ({children,classname,threshold,responsive}: Props){
+export default function RevealScroll ({children,classname,threshold, responsive}: Props){
 
     const LeftRef = useRef(null)
     const [isVisible,setIsVisible] = useState(false)
     useEffect(()=>{
+        
         const observe = new IntersectionObserver((entries) => {
             entries.forEach(e =>{
                 if(e.isIntersecting){
+                    console.log(responsive)
+                    console.log(window.innerWidth)
                     console.log(e.target)
                     setIsVisible(true)
+                    
+                    
+                    
+                        
                 }
             })
         },{threshold:threshold})
@@ -34,7 +41,7 @@ export default function RevealScroll ({children,classname,threshold,responsive}:
 
     return(
         <div ref={LeftRef}>
-        <div className={(responsive + (isVisible? ("translate-x-0 ") : "-translate-x-full ")) + "transition-transform duration-300"}>
+        <div className={((responsive != undefined)? isVisible? "-translate-x-0 " : "-translate-x-full " : "") + "transition-transform duration-300"}>
             {children}
         </div>
         </div>
