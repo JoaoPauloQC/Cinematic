@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image"
+
 type Sections = {
     name : string,
     path: string,
@@ -40,3 +42,19 @@ allsections.push(MUV)
 allsections.push(GalileuVSAristoteles)
 allsections.push(Geocentrism)
 allsections.push(Heliocentrism)
+
+type socialmedia = {
+    name: string,
+    icon?: StaticImageData,
+    iconPath?: string,
+    link?: string
+}
+
+const github: socialmedia = {
+    name: "GitHub",
+    iconPath: "",
+    link: "https://github.com/JoaoPauloQC"
+}
+
+export const socialmedias : socialmedia[] = []
+socialmedias.push(github)

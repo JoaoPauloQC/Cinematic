@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "../../css/main.css";
+import Header from "@/shared/Header";
+import Footer from "@/shared/Footer";
 
 
 export const metadata: Metadata = {
@@ -29,7 +31,9 @@ export default function RootLayout({
       <body
         
       >
+        <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

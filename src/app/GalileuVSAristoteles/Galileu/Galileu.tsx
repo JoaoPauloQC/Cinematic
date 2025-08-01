@@ -1,7 +1,8 @@
-import Box, { PersonalData } from "@/Components/Box";
+import { PersonalData } from "@/Components/Box";
 import GalileuGraph from "./GalileuGraph";
 
 import galileuPic from '@/assets/physicist/galileuPic.jpg'
+import TextBox from "@/Components/Box";
 
 
 
@@ -14,7 +15,7 @@ const GalileuData: PersonalData ={
 export default function Galileu () {
     return (
         <div className="Galileu flex flex-col pt-20 gap-10 justify-center wrapper ">
-            <Box title={GalileuData.title} texts={GalileuData.texts} img={GalileuData.img}></Box>
+            <TextBox title={GalileuData.title} texts={GalileuData.texts} img={GalileuData.img}></TextBox>
 
             <h1 className="fade-in-1s Montserrat self-center text-4xl">Teoria de Galileu: </h1>
             <GalileuGraph/>
