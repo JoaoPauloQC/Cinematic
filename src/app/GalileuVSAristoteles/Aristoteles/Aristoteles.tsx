@@ -1,7 +1,7 @@
 import { PersonalData } from "@/Components/Box";
 import AristolesGraph from "./AristotelesGraph";
 import aristotelesPic from '@/assets/physicist/aristotelesPic.jpg'
-import TextBox from "@/Components/Box";
+import {TextBox} from "@/Components/Box";
 
 const AristolesData : PersonalData ={
     title: "Aristóteles",

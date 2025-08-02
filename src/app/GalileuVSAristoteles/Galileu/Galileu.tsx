@@ -2,7 +2,7 @@ import { PersonalData } from "@/Components/Box";
 import GalileuGraph from "./GalileuGraph";
 
 import galileuPic from '@/assets/physicist/galileuPic.jpg'
-import TextBox from "@/Components/Box";
+import {TextBox} from "@/Components/Box";
 
 
 

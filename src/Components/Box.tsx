@@ -13,7 +13,7 @@ type PersonalData = {
 }
 export type {PersonalData}
 
-export default function TextBox ({img,texts,title}: Props) {
+export function TextBox ({img,texts,title}: Props) {
 
       return (
         <div className="max-md:px-10">
@@ -39,10 +39,15 @@ export default function TextBox ({img,texts,title}: Props) {
 
 
 
-export function Box ({children} : {children: React.ReactNode}) {
+type BoxProps = {
+    children: React.ReactNode,
+    classname? : string
+}
+
+export function Box ({classname,children} : BoxProps) {
     return (
         <div className="max-md:px-10">
-            <div className=" border-2 rounded-xl px-3 py-2 Poppins flex gap-10 border-neutral-600 hover:bg-neutral-700 bg-neutral-900 ProjectBox max-md:flex-col">
+            <div className={" border-2 rounded-xl px-3 py-2 Poppins flex gap-10 ProjectBox " + (classname? classname: "border-neutral-600 hover:bg-neutral-700 bg-neutral-900  max-md:flex-col")}>
                 {children}
             </div>
         </div>
