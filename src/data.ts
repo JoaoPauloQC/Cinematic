@@ -58,5 +58,21 @@ const github: socialmedia = {
     link: "https://github.com/JoaoPauloQC"
 }
 
+import instaIcon from '@/assets/icons/icons8-instagram.svg'
+
+const instagram : socialmedia = {
+    name: "Instagram",
+    icon: instaIcon,
+    link: "https://www.instagram.com/joao.pqc"
+}
+
+import whatsappIcon from '@/assets/icons/icons8-whatsapp.svg'
+
+const whatsapp : socialmedia ={
+    name: "WhatsApp",
+    icon: whatsappIcon,
+    link: "https://wa.me/5511950806063"
+}
+
 export const socialmedias : socialmedia[] = []
-socialmedias.push(github)
+socialmedias.push(github,instagram, whatsapp)
