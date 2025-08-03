@@ -24,7 +24,7 @@ export default function Galileu () {
                     <h1 className="fade-in-1s Montserrat self-center text-4xl max-md:text-3xl">Teoria de Galileu </h1>
                 </div>
             </DirectionReveal> 
-            <RevealScroll threshold={0.5} transition="transition-all duration-800">
+            <RevealScroll threshold={0.5} transition="transition-opacity duration-800">
             <GalileuGraph/>
             </RevealScroll>
         </div>

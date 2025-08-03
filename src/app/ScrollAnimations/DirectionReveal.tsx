@@ -18,9 +18,12 @@ export const DirectionReveal = ({direction,responsive,children,threshold,classna
     const DirectionRef = useRef(null)
     const [isVisible,setIsVisible] = useState(false)
     useEffect(()=> {
+        const shouldAnimate = (responsive == undefined || responsive > window.innerWidth)
+        if (!shouldAnimate){
+            setIsVisible(true)
+            return
+        }
         console.log("Direção:",direction,"Isvisible? :", isVisible,responsive)
-            if (responsive){
-            if ( responsive > window.innerWidth){
             const observe = new IntersectionObserver((entries) => {
                 entries.forEach(e =>{
                     if(e.isIntersecting){
@@ -34,45 +37,18 @@ export const DirectionReveal = ({direction,responsive,children,threshold,classna
                             
                     }
             })
-            },{threshold:threshold})
+            },{threshold:threshold,rootMargin: '0px 0px -15% 0px'})
             if(DirectionRef.current){
                 observe.observe(DirectionRef.current)
             }
             console.log("Constructing Left")
     
             return () =>{
+                observe.disconnect()
                 console.log("Destructing Left")
             }}
-            else{
-                setIsVisible(true)
-            }}
-            else{
-                const observe = new IntersectionObserver((entries) => {
-                entries.forEach(e =>{
-                    if(e.isIntersecting){
-                        console.log("Responsive tag: ", responsive)
-                        console.log("Width",window.innerWidth)
-                        console.log(e.target)
-                        setIsVisible(true)
-                        
-                        
-                        
-                            
-                    }
-                })
-            },{threshold:threshold})
-            
-            if(DirectionRef.current){
-                observe.observe(DirectionRef.current)
-            }
-            console.log("Constructing Left")
-        
-            return () =>{
-                console.log("Destructing Left")
-            }}
-            
-        }
         )
+            
         
     
         return(
