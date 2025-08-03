@@ -46,7 +46,7 @@ type BoxProps = {
 
 export function Box ({classname,children} : BoxProps) {
     return (
-        <div className="max-md:px-10">
+        <div className="max-md:px-5 w-full">
             <div className={" border-2 rounded-xl px-3 py-2 Poppins flex gap-10 ProjectBox " + (classname? classname: "border-neutral-600 hover:bg-neutral-700 bg-neutral-900  max-md:flex-col")}>
                 {children}
             </div>
