@@ -4,7 +4,7 @@ export default function Footer ()  {
     return(
         <div className="footer bg-neutral-900">
             <div className="wrapper">
-                <div className="footer__container flex justify-between py-10">
+                <div className="footer__container flex justify-between py-10 max-md:flex-col max-md:justify-center max-md:text-center max-md:gap-10">
                     <div className="footer__left grid gap-10 Poppins text-xl items-center">
                         <p> João Paulo Queiroz Costa </p>
                         <p> Repositório GitHub </p>
@@ -12,9 +12,9 @@ export default function Footer ()  {
                     </div>
                     <div className="footer__right">
                         <Box classname={"border-amber-200  bg-neutral-900 max-md:flex-col"}>
-                            <form action="" className="w-96 grid justify-center p-5 gap-5">
-                                <input type="text" className="border-2 border-amber-200 rounded-xl Poppins py-2 pl-3 outline-none bg-neutral-900 text-amber-200" placeholder="seuemail@gmail.com" />
-                                <textarea  className="border-2 border-amber-200 rounded-xl h-30 Poppins py-2 pl-3 outline-none bg-neutral-900 text-amber-200 flex text-start" placeholder="Sua mensagem"/>
+                            <form action="" className="w-96 grid justify-center p-5 gap-5 max-md:p-3 max-md:w-full">
+                                <input type="text" className="border-2 border-amber-200 rounded-xl Poppins py-4 px-5 outline-none bg-neutral-900 text-amber-200" placeholder="seuemail@gmail.com" />
+                                <textarea  className="border-2 border-amber-200 rounded-xl h-40 Poppins py-4 px-5 outline-none bg-neutral-900 text-amber-200 flex text-start" placeholder="Sua mensagem"/>
 
                             </form>
                         </Box>

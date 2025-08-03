@@ -14,7 +14,7 @@ export default function Header () {
                    <div className="header__icons">
                         {socialmedias.map(sm => (
                             <div className="icon__box w-10 h-10 bg-neutral-100 flex justify-center items-center rounded-xl">
-                                <img src={(sm.iconPath? sm.iconPath : (sm.icon? sm.icon.src : ""))} alt="" />
+                                <img src={(sm.iconPath? sm.iconPath : (sm.icon? sm.icon.src : ""))} alt="" className="w-full"/>
 
                             </div>
 

@@ -5,11 +5,17 @@ import { useEffect, useRef, useState } from "react"
 type Props = {
     children: React.ReactNode,
     classname?: string,
+    transition?: string,
     threshold: number,
 }
 
-export default function RevealScroll ({children,classname,threshold}: Props){
+export default function RevealScroll ({children,classname,threshold,transition}: Props){
 
+    const [transitionState, setTransition] = useState (transition)
+    useEffect(() =>{console.log(transition);if (transition == undefined){
+        setTransition("transition-opacity duration-300")
+    }}
+    )
     const RevealRef = useRef(null)
     const [isVisible,setIsVisible] = useState(false)
     useEffect(()=>{
@@ -32,7 +38,7 @@ export default function RevealScroll ({children,classname,threshold}: Props){
     })
 
     return(
-        <div className={(isVisible? "opacity-100 " : "opacity-0 ") + "transition-opacity duration-300"} ref={RevealRef}>
+        <div className={(isVisible? "opacity-100 " : "opacity-0 ") + transitionState} ref={RevealRef}>
             {children}
         </div>
     )

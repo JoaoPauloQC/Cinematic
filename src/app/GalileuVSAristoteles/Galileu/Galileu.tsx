@@ -3,6 +3,8 @@ import GalileuGraph from "./GalileuGraph";
 
 import galileuPic from '@/assets/physicist/galileuPic.jpg'
 import {TextBox} from "@/Components/Box";
+import { DirectionReveal } from "@/app/ScrollAnimations/DirectionReveal";
+import RevealScroll from "@/app/ScrollAnimations/RevealScroll";
 
 
 
@@ -16,9 +18,15 @@ export default function Galileu () {
     return (
         <div className="Galileu flex flex-col pt-20 gap-10 justify-center wrapper ">
             <TextBox title={GalileuData.title} texts={GalileuData.texts} img={GalileuData.img}></TextBox>
-
-            <h1 className="fade-in-1s Montserrat self-center text-4xl">Teoria de Galileu: </h1>
+            <DirectionReveal direction={'right'} responsive={2000} threshold={0.9} classname={"py-20 max-md:px-5"}>
+                <div className="flex gap-4  flex-row-reverse">
+                    <div className="bg-neutral-200 h-20 w-1"></div>
+                    <h1 className="fade-in-1s Montserrat self-center text-4xl max-md:text-3xl">Teoria de Galileu </h1>
+                </div>
+            </DirectionReveal> 
+            <RevealScroll threshold={0.5} transition="transition-all duration-800">
             <GalileuGraph/>
+            </RevealScroll>
         </div>
     )
 }

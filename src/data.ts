@@ -50,9 +50,11 @@ type socialmedia = {
     link?: string
 }
 
+import githubIcon from '@/assets/icons/icons8-github.svg'
+
 const github: socialmedia = {
     name: "GitHub",
-    iconPath: "",
+    icon: githubIcon,
     link: "https://github.com/JoaoPauloQC"
 }
 
