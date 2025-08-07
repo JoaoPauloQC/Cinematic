@@ -6,11 +6,7 @@ import { OrbitControls, Stars } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
 import geocentrismImg from '@/assets/random/geocentrismTheory.jpeg'
 
-const geoCentrismData : PersonalData = {
-    title: "Geocentrismo",
-    texts: ["A teoria geocêntrica, também conhecida como modelo geocêntrico, propõe que a Terra é o centro imóvel do universo, e os demais corpos celestes se movem em órbitas ao seu redor","A ideia de um universo geocêntrico foi desenvolvida por diversos pensadores antigos, como Aristóteles e Hiparco, mas foi o astrônomo grego Cláudio Ptolomeu, no século II d.C., quem elaborou o modelo mais completo e influente da época, conhecido como modelo ptolomaico." ],
-    img: geocentrismImg.src
-}
+
 
 export default function Geocentrism () {
     return (
