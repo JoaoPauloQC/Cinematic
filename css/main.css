@@ -263,4 +263,11 @@
   background-color: transparent;
 }
 
+.icon__box {
+  transition: transform 200ms ease-out;
+}
+.icon__box:hover {
+  transform: scale(1.06);
+}
+
 /*# sourceMappingURL=main.css.map */
