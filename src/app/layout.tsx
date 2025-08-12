@@ -37,7 +37,7 @@ export default function RootLayout({
         <Header/>
         {children}
         <Footer/>
-      </body>
+      </body className="bg-neutral-950 text-neutral-100">
     </html>
   );
 }
