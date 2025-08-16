@@ -4,6 +4,7 @@ import Physics from "./Physics";
 import ProjectContent from "./ProjectContent";
 import RevealScroll from "@/app/ScrollAnimations/RevealScroll";
 import LeftScroll from "@/app/ScrollAnimations/LeftScroll";
+import OtherProjects from "./OtherProjects";
 
 export default function HomeContent (){
     return (
@@ -35,8 +36,11 @@ export default function HomeContent (){
                     </LeftScroll>
                 ))}
             
+                
+
             </div>
             </div>
+            <OtherProjects classname={"pt-20"}></OtherProjects>
 
         </div>
     )
