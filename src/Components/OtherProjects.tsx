@@ -26,7 +26,7 @@ type Props ={
 }
 
 export default function OtherProjects({onclick,classname}: Props){
-    const [width,setWidth] = useState(window.innerWidth)
+    const [width,setWidth] = useState<number>(window.innerWidth)
     useEffect(()=>setWidth(window.innerWidth),[window.innerWidth])
     const python = ProjectCategories[0]
     console.log(python.bgColor)
