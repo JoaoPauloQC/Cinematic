@@ -15,6 +15,20 @@
   }
 }
 
+.gradients--blacktoblue {
+  background: rgb(10, 10, 10);
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0) 0%, rgb(0, 35, 65) 20%, rgb(0, 69, 160) 40%, rgba(10, 10, 10, 0) 100%);
+}
+
+.gradients--blacktoorange {
+  background: #0A0A0A;
+  background: linear-gradient(180deg, rgb(10, 10, 10) 0%, rgba(125, 40, 0, 0.575) 25%, rgb(204, 75, 0) 50%, rgba(125, 40, 0, 0.575) 75%, rgb(10, 10, 10) 100%);
+}
+.gradients--blacktogreenblue {
+  background: #0A0A0A;
+  background: linear-gradient(180deg, rgb(10, 10, 10) 0%, rgb(100, 102, 0) 25%, rgb(156, 173, 0) 50%, rgb(107, 109, 0) 75%, rgb(10, 10, 10) 100%);
+}
+
 .Poppins {
   font-family: Poppins;
 }

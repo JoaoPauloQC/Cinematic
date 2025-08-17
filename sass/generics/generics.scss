@@ -26,3 +26,21 @@ $iphone : 400px;
 .leftscroll{
     @include responsive($mobile)
 }
+
+.gradients{
+    &--blacktoblue{
+       background: rgb(10, 10, 10);
+       background: linear-gradient(180deg, rgba(10, 10, 10, 0) 0%, rgb(0, 35, 65) 20%, rgb(0, 69, 160) 40%,rgba(10,10,10,0) 100%);
+    }
+}
+
+.gradients{
+    &--blacktoorange{
+        background: #0A0A0A;
+        background: linear-gradient(180deg, rgba(10, 10, 10, 1) 0%, rgba(125, 40, 0, 0.575) 25%, rgba(204, 75, 0, 1) 50%, rgb(125, 40, 0,0.575) 75%, rgba(10, 10, 10, 1) 100%);
+    }
+    &--blacktogreenblue{
+        background: #0A0A0A;
+        background: linear-gradient(180deg, rgba(10, 10, 10, 1) 0%, rgb(100, 102, 0) 25%, rgb(156, 173, 0) 50%, rgba(107, 109, 0) 75%, rgba(10, 10, 10, 1) 100%);
+    }
+}

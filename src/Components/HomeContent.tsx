@@ -44,7 +44,7 @@ export default function HomeContent (){
             </div>
             <Portuguese/>
             <PortugueseRoutes/>  
-            <OtherProjects classname={"pt-20"}></OtherProjects>
+            
 
         </div>
     )

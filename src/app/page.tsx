@@ -1,4 +1,5 @@
 import HomeContent from "@/Components/HomeContent";
+import OtherProjects from "@/Components/OtherProjects";
 import MRU from "@/app/MRU/MRU";
 import Image from "next/image";
 
@@ -9,7 +10,9 @@ export default function Home() {
 
       
       <HomeContent></HomeContent>
+      
       </div>
+      <OtherProjects classname="py-20"></OtherProjects>
     </div>
   );
 }

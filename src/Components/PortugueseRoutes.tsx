@@ -1,9 +1,25 @@
+"use client"
+
 import LeftScroll from "@/app/ScrollAnimations/LeftScroll";
 import { portugueseSections } from "@/data";
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
 export default function PortugueseRoutex(){
+    const bgRef = useRef(null)
+    const [bg,setBg] = useState("bg-neutral-950")
+    useEffect(()=>{
+        const observer = new IntersectionObserver((entries)=>{
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    setBg("gradient--blacktoblue")
+                }
+            })
+        })
+    })
+
     return (
+        
         <div className="w-full overflow-y-hidden overflow-x-scroll scroll-smooth movements__card__container">
             <div className="movements__card__area flex  gap-30 pt-20 p-10 overflow-y-auto  max-md:flex-col max-md:items-center">
                 
@@ -21,5 +37,6 @@ export default function PortugueseRoutex(){
 
             </div>
         </div>
+    
     )
 }
