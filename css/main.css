@@ -125,6 +125,74 @@
   transform: scale(1.07);
 }
 
+@keyframes logocolor {
+  0% {
+    color: #00ffe0;
+    font-family: Poppins;
+  }
+  25% {
+    font-family: "Times New Roman", Times, serif;
+  }
+  50% {
+    color: #fff;
+    font-family: Montserrat;
+  }
+  75% {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  100% {
+    color: #00ffe0;
+    font-family: Poppins;
+  }
+}
+.animation__logocolor {
+  animation: logocolor 2s ease-in infinite;
+}
+.animation__top-to-mid {
+  animation: top-to-mid 800ms ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes top-to-mid {
+  0% {
+    top: -35%;
+    transform: translateY(0);
+  }
+  100% {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@keyframes chatgptbtn {
+  0% {
+    background-color: #007E22;
+  }
+  50% {
+    background-color: #004613;
+  }
+  100% {
+    background-color: #007E22;
+  }
+}
+.animation__chatgptbtn {
+  animation: chatgptbtn 3s linear infinite;
+}
+
+@keyframes geminibtn {
+  0% {
+    background-color: #0080F8;
+  }
+  50% {
+    background-color: #003566;
+  }
+  100% {
+    background-color: #0080F8;
+  }
+}
+.animation__geminibtn {
+  animation: geminibtn 3s linear infinite;
+}
+
 .transition {
   transition: all;
 }
@@ -142,6 +210,14 @@
 }
 .transition__5s {
   transition-duration: 2.5s;
+}
+
+.GuessingW__Input {
+  font-family: Montserrat;
+}
+.GuessingW__PopUp {
+  position: absolute;
+  top: 0%;
 }
 
 .Galileu__Graph {
@@ -261,6 +337,13 @@
 }
 .movements__card__container::-webkit-scrollbar-track {
   background-color: transparent;
+}
+
+.GuessTheW__button {
+  transition: all 300ms ease-out;
+}
+.GuessTheW__button:hover {
+  box-shadow: -0.1px 0 20px #ffd230, 0.1px 0 20px #ffd230;
 }
 
 .icon__box {

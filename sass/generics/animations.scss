@@ -63,3 +63,75 @@
         transform: scale(1.07);
     }
 }
+
+@keyframes logocolor {
+    0%{
+        color: #00ffe0 ;
+        font-family: Poppins;
+    }
+    25%{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    50%{
+        color: #fff;
+        font-family: Montserrat;
+    }
+    75%{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    100%{
+        color: #00ffe0 ;
+        font-family: Poppins;
+    }
+}
+
+
+.animation{
+    &__logocolor{
+        animation: logocolor 2s ease-in infinite;
+    }
+    &__top-to-mid {
+        animation: top-to-mid 800ms ease-out ;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+@keyframes top-to-mid {
+
+    0%{
+        top:-35%;
+        transform: translateY(0)
+    }
+    100%{
+        top:50%;
+        transform: translateY(-50%)
+    }
+
+}
+
+
+@mixin backgroundcolortransition ($color1, $color2 , $name) {
+
+    @keyframes #{$name} {
+        0% {
+            background-color: $color1
+
+        }
+        50%{
+            background-color: $color2
+        }
+
+        100%{
+            background-color: $color1;
+        }
+    }
+    .animation{
+        &__#{$name} {
+        animation: #{$name} 3s linear infinite;
+    }
+    }
+}
+
+@include backgroundcolortransition(#007E22,#004613, chatgptbtn);
+@include backgroundcolortransition(#0080F8,#003566, geminibtn)

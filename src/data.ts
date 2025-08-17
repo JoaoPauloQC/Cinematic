@@ -74,8 +74,14 @@ const Barroco: Sections = {
 
 }
 
+const guessTheWord: Sections = {
+    name: "Acerte a palavra",
+    path: "/portuguese/guessTheWord",
+    description: "Você consegue acertar a palavra?"
+}
+
 export const portugueseSections: Sections[] = [
-    Arcade,Barroco
+    Arcade,Barroco,guessTheWord
 ]
 
 type socialmedia = {
