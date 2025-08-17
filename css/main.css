@@ -26,7 +26,7 @@
 }
 .gradients--blacktogreenblue {
   background: #0A0A0A;
-  background: linear-gradient(180deg, rgb(10, 10, 10) 0%, rgb(100, 102, 0) 25%, rgb(156, 173, 0) 50%, rgb(107, 109, 0) 75%, rgb(10, 10, 10) 100%);
+  background: linear-gradient(180deg, rgb(10, 10, 10) 0%, rgb(168, 159, 24) 40%, rgb(255, 239, 14) 50%, rgb(168, 159, 24) 60%, rgb(10, 10, 10) 100%);
 }
 
 .Poppins {
