@@ -27,7 +27,9 @@ type Props ={
 
 export default function OtherProjects({onclick,classname}: Props){
     const [width,setWidth] = useState<number>(0)
+    
     useEffect(()=>{
+        setWidth(window.innerWidth)    
         const resizeWidth = () => setWidth(window.innerWidth)
 
         window.addEventListener("resize", resizeWidth)
