@@ -10,7 +10,7 @@ export default function Header () {
                         <img src={icon.src} alt="" />
                     </div>
                     <div className="header__title Poppins flex items-center text-2xl">
-                        <h1>Central Física</h1>
+                        <h1>Central Intelecto</h1>
                     </div>
                    <div className="header__icons flex gap-2">
                         {socialmedias.map(sm => (

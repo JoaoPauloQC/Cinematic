@@ -5,6 +5,8 @@ import ProjectContent from "./ProjectContent";
 import RevealScroll from "@/app/ScrollAnimations/RevealScroll";
 import LeftScroll from "@/app/ScrollAnimations/LeftScroll";
 import OtherProjects from "./OtherProjects";
+import Portuguese from "./Portuguese";
+import PortugueseRoutes from "./PortugueseRoutes";
 
 export default function HomeContent (){
     return (
@@ -13,7 +15,7 @@ export default function HomeContent (){
                 <h1 className="text-6xl">Olá!</h1>
                 <div className="flex text-5xl  pt-7 max-md:flex-col">
                 <h2 className="">Seja bem vindo ao </h2>
-                <p className="font-bold pl-3"> Central Física</p>
+                <p className="font-bold pl-3"> Central Intelecto</p>
                 </div>
             </div>
             <div className="max-md:px-5">
@@ -36,10 +38,12 @@ export default function HomeContent (){
                     </LeftScroll>
                 ))}
             
-                
+                        
 
             </div>
             </div>
+            <Portuguese/>
+            <PortugueseRoutes/>  
             <OtherProjects classname={"pt-20"}></OtherProjects>
 
         </div>

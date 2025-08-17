@@ -36,12 +36,47 @@ const Heliocentrism : Sections = {
     description: "O que foi o Heliocentrismo?",
 }
 
+export type ProjectCategory = {
+    name: string,
+    img?: ImageData | string,
+    textColor: string,
+    bgColor: string
+}
+
+const python: ProjectCategory = {
+    name: "Python",
+    textColor: "#edf222",
+    bgColor: "#011752"
+}
+
+export const ProjectCategories: ProjectCategory[] = [
+    python
+]
+
 export const allsections: Sections[] = []
 allsections.push(MRU)
 allsections.push(MUV)
 allsections.push(GalileuVSAristoteles)
 allsections.push(Geocentrism)
 allsections.push(Heliocentrism)
+
+
+const Arcade: Sections = {
+    name: "Arcadismo",
+    path: "/portuguese/arcadism",
+    description: "O que é arcadismo?"
+
+}
+const Barroco: Sections = {
+    name: "Barroco",
+    path: "/portuguese/barroco",
+    description: "O que é o Barroco?"
+
+}
+
+export const portugueseSections: Sections[] = [
+    Arcade,Barroco
+]
 
 type socialmedia = {
     name: string,

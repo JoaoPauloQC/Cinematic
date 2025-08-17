@@ -59,7 +59,7 @@ export function Box ({classname,children} : BoxProps) {
 
 export function ProjectBox ({classname,children,changeColorOnHover,changeSizeOnHover} : BoxProps) {
     return (
-        <div className="max-md:px-5 w-full">
+        <div className="max-xl:px-5 w-full">
             <div className={" border-2 rounded-xl px-3 py-2 Poppins flex gap-10 " +(changeSizeOnHover? "ProjectBox " : "") + (changeColorOnHover? "hover:bg-neutral-700": "") + (classname? classname:  " border-neutral-600  bg-neutral-900  max-md:flex-col")}>
                 {children}
             </div>
