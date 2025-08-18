@@ -80,6 +80,16 @@ const guessTheWord: Sections = {
     description: "Você consegue acertar a palavra?"
 }
 
+const howMuscleWorks: Sections = {
+    name: "Como o musculo funciona",
+    path: "/science/howMuscleWorks",
+    description: ""
+}
+
+export const scienceSections: Sections[] = [
+    howMuscleWorks
+]
+
 export const portugueseSections: Sections[] = [
     Arcade,Barroco,guessTheWord
 ]

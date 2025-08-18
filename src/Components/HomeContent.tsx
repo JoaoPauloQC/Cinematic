@@ -7,6 +7,8 @@ import LeftScroll from "@/app/ScrollAnimations/LeftScroll";
 import OtherProjects from "./OtherProjects";
 import Portuguese from "./Portuguese";
 import PortugueseRoutes from "./PortugueseRoutes";
+import Science from "./Science";
+import ScienceRoutes from "./ScienceRoutes";
 
 export default function HomeContent (){
     return (
@@ -44,6 +46,8 @@ export default function HomeContent (){
             </div>
             <Portuguese/>
             <PortugueseRoutes/>  
+            <Science></Science>
+            <ScienceRoutes></ScienceRoutes>
             
 
         </div>
