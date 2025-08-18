@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import Muscle from "./canvas/Muscle";
 import { OrbitControls, Stars } from "@react-three/drei"
 import { useState } from "react";
-import { PersonalData, TextBox } from "@/Components/Box";
+import { Box, PersonalData, TextBox } from "@/Components/Box";
 import armAnatomyImg from '@/assets/science/armAnatomy.png'
 
 const MuscleData: PersonalData = {
@@ -28,12 +28,23 @@ export default function () {
             
                 <Muscle flex={flexing}></Muscle>
                 <color attach={'background'} args={['black']}/>
-                <OrbitControls autoRotate autoRotateSpeed={0} enablePan={true} enableZoom={true} minPolarAngle={1} maxPolarAngle={Math.PI*2} />          
+                <OrbitControls autoRotate autoRotateSpeed={0.3} enablePan={true} enableZoom={true} minPolarAngle={0} maxPolarAngle={Math.PI*2} />          
             </Canvas>
             </div>
-            <div className="pt-10 flex justify-center">
+            <div className="pt-10 pb-20 flex justify-center">
             <button onClick={()=> setFlexing(!flexing)} className="px-4 py-2 Graph__Ball__Button cursor-pointer rounded-xl">Contrair</button>
             </div>
+            <Box classname="">
+                <div className="gap-5 grid p-3">
+                <h1 className="text-2xl">
+                    Explicação
+                </h1>
+                <p>
+                    A primeira esfera representa a articulação do ombro, a segunda a articulação do antebraço. O primeiro paralelepípedo mostra do ombro ao antebraço e contém o biceps, ja o segundo representa o antebraço.
+                    Quando contraímos o braço (flexionamos nosso antebraço em direção ao ombro) aproximamos a inserção do biceps (perto do antebraço) a origem(perto do ombro) e o bíceps é "ativado" ficando vermelho e sendo estimulado
+                </p>
+                </div>
+            </Box>
         </div>
     </div>
     )
