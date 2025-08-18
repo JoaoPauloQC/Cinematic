@@ -4,7 +4,7 @@ import Muscle from "./canvas/Muscle";
 import { OrbitControls, Stars } from "@react-three/drei"
 import { useState } from "react";
 import { Box, PersonalData, TextBox } from "@/Components/Box";
-import armAnatomyImg from '@/assets/science/armAnatomy.png'
+import armAnatomyImg from '@/assets/biology/armAnatomy.png'
 
 const MuscleData: PersonalData = {
     title: "Contração muscular",

@@ -81,9 +81,9 @@ const guessTheWord: Sections = {
 }
 
 const howMuscleWorks: Sections = {
-    name: "Como o musculo funciona",
-    path: "/science/howMuscleWorks",
-    description: ""
+    name: "Como o músculo funciona?",
+    path: "/biology/howMuscleWorks",
+    description: "O que é contrair um músculo?"
 }
 
 export const scienceSections: Sections[] = [
