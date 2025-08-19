@@ -4,7 +4,7 @@ type Props={
     flex: boolean
 }
 
-export default function MuscleMesh({flex} : Props){
+export default function Biceps({flex} : Props){
     const [flexioned,setFlexioned] = useState()
     const [x,setX] = useState(1)
     const [y,setY] = useState(1.6)
@@ -17,7 +17,7 @@ export default function MuscleMesh({flex} : Props){
     const rectRef = useRef<THREE.Mesh>(null)
     
     useEffect(()=>{
-        console.log(flex)
+        console.log(flex, "Biceps current: ", bicepsRef.current[1])
         if(flex){
         setBicepsColor("red")
         const animate = setInterval(()=>{
